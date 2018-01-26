@@ -1,0 +1,29 @@
+﻿.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none; /* This makes sure that we can still click outside of the modal to close it */
+    background: rgb(205, 208, 210);
+    background: -moz-linear-gradient(90deg, rgb(228, 231, 233) 30%, rgb(207, 209, 211) 70%);
+    background: -webkit-linear-gradient(90deg, rgb(228, 231, 233) 30%, rgb(207, 209, 211) 70%);
+    background: -o-linear-gradient(90deg, rgb(228, 231, 233) 30%, rgb(207, 209, 211) 70%);
+    background: -ms-linear-gradient(90deg, rgb(228, 231, 233) 30%, rgb(207, 209, 211)70%);
+    background: linear-gradient(120deg, 360deg, rgb(228, 231, 233) 30%, rgb(207, 209, 211) 70%);
+}
+
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+.modal-content {
+    width: inherit;
+    height: inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+    width: 400px;
+    border-radius: 15px;
+}

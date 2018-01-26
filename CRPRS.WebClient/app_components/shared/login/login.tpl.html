@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootstrap Login Form</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+    <!--login modal-->
+    <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="vertical-alignment-helper">
+
+            <div class="modal-dialog vertical-align-center">
+                <div class="modal-content">
+                    <div class="modal-header" style="">
+                        <img src="assets/img/lock-open-blue.png" class="img-circle" style="max-height:40px;-o-object-fit:contain;object-fit:contain;margin-top:15px;margin-left:50px;" />
+                        <h5 class="panel-title" style="margin-left:0px; margin-top: -25px; text-align: center; font-family:sans-serif">LOGIN TO NCRPRS</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form center-block" data-toggle="validator" role="form">
+                            <div class="form-group has-feedback ">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                    <input type="text" class="form-control" placeholder="User Name" ng-model="vm.username"
+                                           ng-pattern="/^[a-zA-Z0-9\_\-\.]{4,10}$/" data-error="Bruh, that User Name is invalid" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                    <input type="password" class="form-control" data-minlength="6" placeholder="Password"
+                                           ng-model="vm.password" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <button class="btn btn-primary btn-sm " style="margin-left:295px;width:70px" data-ng-click="vm.login()">LOGIN&nbsp;<i class="fa fa-sign-in"></i></button>
+                                </div>
+
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-group">
+                            <div ng-cloak data-ng-hide="vm.message == ''">
+                                <div class="alert alert-danger fade in" style="text-align:left">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                    {{vm.message}}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

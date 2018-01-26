@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRPRS.WebClient", "CRPRS.WebClient\CRPRS.WebClient.csproj", "{307520D4-37B7-416E-9BBF-B50991092ACF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{13236EE0-32B0-4AB8-8173-B630D9B137DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01Client", "01Client", "{A321CDDA-1B7A-4511-BD7C-09AF1A043C96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00build-script", "00build-script", "{CB22733F-280C-487C-AEDE-715BFD3D5B8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01Database-script", "01Database-script", "{452874A1-0100-49B7-9561-A600A87FC788}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{307520D4-37B7-416E-9BBF-B50991092ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307520D4-37B7-416E-9BBF-B50991092ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307520D4-37B7-416E-9BBF-B50991092ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307520D4-37B7-416E-9BBF-B50991092ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{307520D4-37B7-416E-9BBF-B50991092ACF} = {A321CDDA-1B7A-4511-BD7C-09AF1A043C96}
+		{A321CDDA-1B7A-4511-BD7C-09AF1A043C96} = {13236EE0-32B0-4AB8-8173-B630D9B137DE}
+	EndGlobalSection
+EndGlobal
